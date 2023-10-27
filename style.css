@@ -1,0 +1,110 @@
+@import url('https://fonts.cdnfonts.com/css/pf-tempesta-five');
+* { margin: 0; padding: 0; box-sizing: border-box; font-family: 'PF Tempesta Five', sans-serif;
+    font-family: 'PF Tempesta Five Extended', sans-serif;
+    font-family: 'PF Tempesta Five Condensed', sans-serif;
+    font-family: 'PF Tempesta Five Compressed', sans-serif;}
+
+ body{
+    background: url(jornada.gif) no-repeat;
+    background-size: cover;
+    margin: 0;
+    padding: 0;
+    align-items: center;
+    display: flex;
+    justify-content: center;
+    
+ }   
+
+.container{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    gap: 100px 50px;
+    
+ }
+.container .card{
+    position: relative;
+    display: flex;
+    justify-content: center;
+    align-items: flex-start;
+    width: 500px;
+    height: 400px;
+    background-color: rgb(253, 207, 68);
+    border-radius: 20px;
+    box-shadow: 0 35px 80px;
+    transition: .5s;
+    top: 400px;
+}
+
+.container .card:hover{
+    height: 500px;
+}
+.container .card .caixaimg{
+    position: absolute;
+    width: 300px;
+    height: 220px;
+    top: 20px;
+    transition: .5s;
+}
+.container .card:hover .caixaimg{
+    top: -100px;
+    scale: .75;
+    
+}
+.container .card:hover .conteudo{
+    top: 150px;
+}
+.container .card .caixaimg img{
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+}
+.container .card .conteudo{
+    position: absolute;
+    top: 250px;
+    width: 100%;
+    height: 50px;
+    overflow: hidden;
+    text-align: center;
+    font-size: 20px;
+}
+.container .card:hover .conteudo{
+    top: 150px;
+    height: 250px;
+    transition: .5s;
+}
+.container .card .conteudo h2{
+    font-size: 2rem;
+    font-weight: 500;
+    line-height: 3rem;
+}
+.container .card .conteudo p{
+    padding: 10px;
+    font-size: 19px;
+}
+.container .card .conteudo a{
+    display: inline-block;
+    padding: 10px 20px;
+    color: black;
+    text-decoration: none;
+    border-radius: 10px;
+}
+
+h1{
+    position: absolute;
+    font-size: 4rem;
+    font-weight: 500;
+    line-height: 3rem;
+    padding: 20px;
+    background-color: rgb(253, 207, 68);
+    left: 600px;
+    top: 60px;
+    border-radius: 20px;
+    box-shadow: 0 25px 80px rgb(255, 196, 0);
+    color: rgb(0, 0, 0);
+
+}
+
+
